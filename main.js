@@ -34,7 +34,28 @@ homeContactBtn.addEventListener('click', () => {
     scrollIntoView('#contact');
 });
 
+// Make Home slowly fade to transparent as window scrolls down -- 0 지점에선 투명도 1, 400지점에선 투명도 0.5, 800지점에선 투명도 0
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+    home.style.opacity = 1 - window.scrollY / homeHeight; /* 투명도 1, 0.5, 0을 구하는 공식 */
+});
+
+// 
+
+
+
+
+
+
+
+
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: 'smooth'});
 }
+
+
+
+
+
