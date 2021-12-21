@@ -13,6 +13,7 @@
     --color-yellow: #fff7d1;
     --color-orange: #feb546;
     --color-black: #000000;
+    --color-maroon: #900020;
 
 
 /* Font size */
@@ -95,11 +96,19 @@ p {
 
 /* Navbar */
 #navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px;
+    background-color: transparent;
+}
+
+#navbar.navbar--dark {
     background-color: var(--color-pink);
+    padding: 8px;
+    transition: all var(--animation-duration) ease-in-out;
 }
 
 .navbar__logo {
@@ -140,15 +149,16 @@ cursor: pointer;
 
 /* Home */
 #home {
-    background: no-repeat center/cover url('images/rose1.png');
+    background: no-repeat center/cover url('images/8배경.png');
     padding: 40px;
+    padding-top: 120px;
     text-align: center;
 }
 
 .home__avatar{
-    width: 250px;
-    height:250px;
-    border-radius: 10%;
+    width: 200px;
+    height:200px;
+    border-radius:50%;
     border: 2px solid var(--color-light-white);
 }
 
