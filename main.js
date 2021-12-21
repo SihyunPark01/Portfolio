@@ -24,7 +24,8 @@ navbarMenu.addEventListener('click', (event) => {
     }
     /*console.log(event.target.dataset.link);
     const scrollTo = document.querySelector(link);
-    scrollTo.scrollIntoView({behavior: 'smooth'});*/    
+    scrollTo.scrollIntoView({behavior: 'smooth'});*/   
+    navbarMenu.classList.remove('open'); 
     scrollIntoView(link);
 });
 
@@ -68,6 +69,12 @@ workBtnContainer.addEventListener('click', (e) => {
 
   // Remove selection from the previous item and select the new one
   const active = document.querySelector('.category__btn.selected');
+  
+  /*
+  const target = 
+    e.garget.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  */
+  
   if (active != null) {
     active.classList.remove('selected');
   }
