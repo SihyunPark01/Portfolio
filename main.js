@@ -22,11 +22,15 @@ navbarMenu.addEventListener('click', (event) => {
     if(link == null){    /*javascript scroll to id 검색 -> MDN*/
         return;
     }
-    /*console.log(event.target.dataset.link);
-    const scrollTo = document.querySelector(link);
-    scrollTo.scrollIntoView({behavior: 'smooth'});*/   
+     
     navbarMenu.classList.remove('open'); 
     scrollIntoView(link);
+});
+
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
 });
 
 // Handle click on 'Contact me' button on home
