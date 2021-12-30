@@ -388,6 +388,8 @@ border-radius: var(--size-border-radius);
     align-self: center;
 }
 
+
+
 .project__description {
     position: absolute;
     background-color: black;
@@ -440,7 +442,7 @@ border-radius: var(--size-border-radius);
   
   .testimonial__avatar {
     width: 150px;
-    height: 150px;
+    height: 180px;
     border-radius: 50%;
   }
   
@@ -520,6 +522,7 @@ border-radius: var(--size-border-radius);
     }
   
     #navbar {
+      padding: 16px;
       flex-direction: column;
       align-items: flex-start;
       background-color: var(--color-pink);
